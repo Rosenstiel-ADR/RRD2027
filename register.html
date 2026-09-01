@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+  PHASED RELEASE SWITCH — change data-phase below on each release date.
+    1 = Save the Date (Oct 6, 2026)  · home page only; forms shown as "opens Nov 2"
+    2 = Abstracts open (Nov 2, 2026) · Submit / Faculty / Attend Only go live
+    3 = Program posted (Feb 1, 2027) · Program schedule goes live
+  Change it in ALL FIVE html files, or the nav will disagree with itself.
+-->
+<html lang="en" data-phase="1">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,10 +18,20 @@
 </head>
 <body>
 
-  <div class="topbar">
+  <div class="topbar until-p2">
     <i class="fas fa-bullhorn"></i> &nbsp;<strong>Save the Date – Friday, March 19, 2027.</strong>
-    &nbsp;Call for abstracts opens Thu, Oct 1, 2026 –
+    &nbsp;Call for abstracts opens Mon, Nov 2, 2026 –
     <a href="submit.html">how it works</a>.
+  </div>
+  <div class="topbar when-p2 until-p3">
+    <i class="fas fa-bullhorn"></i> &nbsp;<strong>The call for abstracts is open.</strong>
+    &nbsp;Submit by Fri, Jan 15, 2027, 5:00 pm ET –
+    <a href="submit.html">submit an abstract</a>.
+  </div>
+  <div class="topbar when-p3">
+    <i class="fas fa-bullhorn"></i> &nbsp;<strong>Rosenstiel Research Day – Friday, March 19, 2027.</strong>
+    &nbsp;The full program is now available –
+    <a href="program.html">see the schedule</a>.
   </div>
 
   <header class="site-header">
@@ -28,10 +45,10 @@
       </a>
       <nav class="site-nav" aria-label="Primary">
         <a href="index.html"><i class="fas fa-home"></i> Home</a>
-        <a href="program.html"><i class="fas fa-calendar-alt"></i> Program</a>
-        <a href="submit.html"><i class="fas fa-file-alt"></i> Submit Abstract</a>
-        <a href="faculty.html"><i class="fas fa-chalkboard-user"></i> Faculty</a>
-        <a href="register.html" class="active"><i class="fas fa-user-check"></i> Attend Only</a>
+        <a href="program.html" class="p3-link"><i class="fas fa-calendar-alt"></i> Program <span class="nav-chip until-p3">Feb 1</span></a>
+        <a href="submit.html" class="p2-link"><i class="fas fa-file-alt"></i> Submit Abstract <span class="nav-chip until-p2">Nov 2</span></a>
+        <a href="faculty.html" class="p2-link"><i class="fas fa-chalkboard-user"></i> Faculty <span class="nav-chip until-p2">Nov 2</span></a>
+        <a href="register.html" class="active p2-link"><i class="fas fa-user-check"></i> Attend Only <span class="nav-chip until-p2">Nov 2</span></a>
       </nav>
     </div>
   </header>
@@ -55,6 +72,12 @@
     </section>
 
     <section class="container section">
+
+      <div class="coming-soon until-p2">
+        <p class="coming-soon-kicker"><i class="fas fa-hourglass-half"></i> Not open yet</p>
+        <p class="coming-soon-date">Audience sign-up opens Monday, November 2, 2026.</p>
+        <p class="coming-soon-body">If you are not presenting, this is where you will sign up to attend. Sign-up closes Friday, January 29, 2027 &ndash; later than the presenter deadline, so you can decide once the program is set.</p>
+      </div>
       <div class="callout callout-highlight">
         <i class="fas fa-lightbulb"></i>
         <div><strong>Presenting an abstract?</strong> You don't need this form.
@@ -63,9 +86,9 @@
         event automatically.</div>
       </div>
 
-      <div class="callout">
+      <div class="callout when-p2">
         <i class="fas fa-clock"></i>
-        <div><strong>Sign-up closes:</strong> Friday, January 8, 2027 at 5:00 pm ET.</div>
+        <div><strong>Sign-up closes:</strong> Friday, January 29, 2027 at 5:00 pm ET.</div>
       </div>
 
       <h2><span class="section-icon"><i class="fas fa-eye"></i></span> What to Expect</h2>
@@ -73,11 +96,11 @@
         <li>A full day of oral presentations, flash talks, and two dedicated poster sessions in SALT.</li>
         <li>Morning coffee, lunch, and reception food and drinks are provided.</li>
         <li>The form asks for your name, role, department, lunch &amp; social-hour headcount, and dietary needs.</li>
-        <li>The full program is announced on <strong>Monday, January 25, 2027</strong>; event details follow closer to the day.</li>
+        <li>The full program is announced on <strong>Monday, February 1, 2027</strong>; event details follow closer to the day.</li>
       </ul>
     </section>
 
-    <section class="container section">
+    <section class="container section when-p2">
       <h2><span class="section-icon"><i class="fas fa-clipboard-list"></i></span> Audience-Only Sign-Up Form</h2>
 
       <p style="margin:1.75rem 0;">
@@ -102,13 +125,13 @@
       </p>
     </section>
 
-    <section class="container section">
+    <section class="container section when-p2">
       <h2><span class="section-icon"><i class="fas fa-bell"></i></span> Reminder Schedule</h2>
       <p>If you tend to forget, we'll send brief reminders:</p>
       <ul class="bulleted">
-        <li><strong><i class="fas fa-bell" style="color:var(--sun)"></i> Tue, Nov 17, 2026</strong> – Reminder #1</li>
-        <li><strong><i class="fas fa-bell" style="color:var(--sun)"></i> Tue, Dec 15, 2026</strong> – Reminder #2</li>
-        <li><strong><i class="fas fa-bell" style="color:var(--sun)"></i> Tue, Jan 5, 2027</strong> – Final reminder (before sign-up closes)</li>
+        <li><strong><i class="fas fa-bell" style="color:var(--sun)"></i> Tue, Dec 15, 2026</strong> – Reminder #1</li>
+        <li><strong><i class="fas fa-bell" style="color:var(--sun)"></i> Tue, Jan 12, 2027</strong> – Reminder #2</li>
+        <li><strong><i class="fas fa-bell" style="color:var(--sun)"></i> Tue, Jan 26, 2027</strong> – Final reminder (before sign-up closes)</li>
       </ul>
     </section>
   </main>

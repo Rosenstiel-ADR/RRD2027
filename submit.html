@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+  PHASED RELEASE SWITCH — change data-phase below on each release date.
+    1 = Save the Date (Oct 6, 2026)  · home page only; forms shown as "opens Nov 2"
+    2 = Abstracts open (Nov 2, 2026) · Submit / Faculty / Attend Only go live
+    3 = Program posted (Feb 1, 2027) · Program schedule goes live
+  Change it in ALL FIVE html files, or the nav will disagree with itself.
+-->
+<html lang="en" data-phase="1">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,10 +18,20 @@
 </head>
 <body>
 
-  <div class="topbar">
+  <div class="topbar until-p2">
     <i class="fas fa-bullhorn"></i> &nbsp;<strong>Save the Date – Friday, March 19, 2027.</strong>
-    &nbsp;Call for abstracts opens Thu, Oct 1, 2026 –
+    &nbsp;Call for abstracts opens Mon, Nov 2, 2026 –
     <a href="submit.html">how it works</a>.
+  </div>
+  <div class="topbar when-p2 until-p3">
+    <i class="fas fa-bullhorn"></i> &nbsp;<strong>The call for abstracts is open.</strong>
+    &nbsp;Submit by Fri, Jan 15, 2027, 5:00 pm ET –
+    <a href="submit.html">submit an abstract</a>.
+  </div>
+  <div class="topbar when-p3">
+    <i class="fas fa-bullhorn"></i> &nbsp;<strong>Rosenstiel Research Day – Friday, March 19, 2027.</strong>
+    &nbsp;The full program is now available –
+    <a href="program.html">see the schedule</a>.
   </div>
 
   <header class="site-header">
@@ -28,10 +45,10 @@
       </a>
       <nav class="site-nav" aria-label="Primary">
         <a href="index.html"><i class="fas fa-home"></i> Home</a>
-        <a href="program.html"><i class="fas fa-calendar-alt"></i> Program</a>
-        <a href="submit.html" class="active"><i class="fas fa-file-alt"></i> Submit Abstract</a>
-        <a href="faculty.html"><i class="fas fa-chalkboard-user"></i> Faculty</a>
-        <a href="register.html"><i class="fas fa-user-check"></i> Attend Only</a>
+        <a href="program.html" class="p3-link"><i class="fas fa-calendar-alt"></i> Program <span class="nav-chip until-p3">Feb 1</span></a>
+        <a href="submit.html" class="active p2-link"><i class="fas fa-file-alt"></i> Submit Abstract <span class="nav-chip until-p2">Nov 2</span></a>
+        <a href="faculty.html" class="p2-link"><i class="fas fa-chalkboard-user"></i> Faculty <span class="nav-chip until-p2">Nov 2</span></a>
+        <a href="register.html" class="p2-link"><i class="fas fa-user-check"></i> Attend Only <span class="nav-chip until-p2">Nov 2</span></a>
       </nav>
     </div>
   </header>
@@ -56,7 +73,13 @@
     </section>
 
     <section class="container section">
-      <div class="callout callout-highlight">
+
+      <div class="coming-soon until-p2">
+        <p class="coming-soon-kicker"><i class="fas fa-hourglass-half"></i> Not open yet</p>
+        <p class="coming-soon-date">Abstract submission opens Monday, November 2, 2026.</p>
+        <p class="coming-soon-body">The form will open here on that date, and submitting is all it takes to register &ndash; there is no separate registration step. In the meantime, the formats below are what you will be choosing between. The deadline will be Friday, January 15, 2027 at 5:00 pm ET.</p>
+      </div>
+      <div class="callout callout-highlight when-p2">
         <i class="fas fa-lightbulb"></i>
         <div><strong>Submission is your registration.</strong> When you submit an
         abstract you are automatically registered for Research Day,
@@ -67,9 +90,9 @@
         Use the <a href="register.html">audience-only sign-up</a> instead.</div>
       </div>
 
-      <div class="callout">
+      <div class="callout when-p2">
         <i class="fas fa-clock"></i>
-        <div><strong>Submission deadline:</strong> Friday, December 18, 2026 at 5:00 pm ET.</div>
+        <div><strong>Submission deadline:</strong> Friday, January 15, 2027 at 5:00 pm ET.</div>
       </div>
 
       <h2><span class="section-icon"><i class="fas fa-desktop"></i></span> Presentation Formats</h2>
@@ -87,7 +110,7 @@
       </div>
     </section>
 
-    <section class="container section">
+    <section class="container section when-p2">
       <h2><span class="section-icon"><i class="fas fa-list-check"></i></span> Guidelines</h2>
       <ul class="bulleted">
         <li><strong>Length:</strong> 250 words maximum, excluding title and author list.</li>
@@ -98,7 +121,7 @@
       </ul>
     </section>
 
-    <section class="container section">
+    <section class="container section when-p2">
       <h2><span class="section-icon"><i class="fas fa-clipboard-question"></i></span> What the Form Will Ask</h2>
       <p>
         Since submission also registers you for the day, the form collects
@@ -113,10 +136,10 @@
       </ul>
     </section>
 
-    <section class="container section">
+    <section class="container section when-p2">
       <h2><span class="section-icon"><i class="fas fa-globe"></i></span> Submit Online</h2>
       <p>
-        Submission opens Thursday, October 1, 2026. You'll receive an email
+        Submission opens Monday, November 2, 2026. You'll receive an email
         confirmation within one business day confirming both your abstract and
         your registration.
       </p>
@@ -132,16 +155,16 @@
       </p>
     </section>
 
-    <section class="container section">
+    <section class="container section when-p2">
       <h2><span class="section-icon"><i class="fas fa-envelope-open-text"></i></span> Review &amp; Notification</h2>
       <p>
         Submissions will be grouped by theme and assigned to oral or
         flash-plus-poster format. All authors will learn their placement when the program
-        is announced on Monday, January 25, 2027.
+        is announced on Monday, February 1, 2027.
       </p>
       <p>
         Presenters will be asked to finalize titles and any poster needs by
-        <strong>Friday, January 8, 2027</strong>.
+        <strong>Friday, January 29, 2027</strong>.
       </p>
     </section>
 

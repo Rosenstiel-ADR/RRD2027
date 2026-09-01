@@ -1790,3 +1790,94 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
   .dropcap::first-letter { font-size: 3.6rem; padding: 0.4rem 0.7rem 0 0; }
   .hero .lede { margin-left: auto !important; margin-right: auto !important; }
 }
+
+/* ============================================================
+   PHASED RELEASE
+   Driven by data-phase on <html>:
+     1 = Save the Date   2 = Abstracts open   3 = Program posted
+   Mark any element with:
+     .when-p2  -> appears from phase 2 onward
+     .when-p3  -> appears from phase 3 onward
+     .until-p2 -> shown only in phase 1
+     .until-p3 -> shown in phases 1 and 2
+   ============================================================ */
+
+[data-phase="1"] .when-p2,
+[data-phase="1"] .when-p3,
+[data-phase="2"] .when-p3,
+[data-phase="2"] .until-p2,
+[data-phase="3"] .until-p2,
+[data-phase="3"] .until-p3 { display: none !important; }
+
+/* --- nav: a section that isn't live yet is muted and dated --- */
+/* Date pills in the nav ("NOV 2", "FEB 1") are HIDDEN — Guoqing found them
+   confusing. To bring them back, change the display below to inline-flex.
+   The dimming of not-yet-live nav items (further down) is what remains. */
+.nav-chip { display: none; }
+
+.nav-chip-styles-unused {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.14rem 0.42rem;
+  border-radius: 999px;
+  background: rgba(10, 42, 71, 0.09);
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+[data-phase="1"] .site-nav a.p2-link,
+[data-phase="1"] .site-nav a.p3-link,
+[data-phase="2"] .site-nav a.p3-link { opacity: 0.62; }
+[data-phase="1"] .site-nav a.p2-link:hover,
+[data-phase="1"] .site-nav a.p3-link:hover,
+[data-phase="2"] .site-nav a.p3-link:hover { opacity: 1; }
+
+
+/* --- a call to action that isn't actionable yet --- */
+.btn-pending {
+  background: rgba(10, 42, 71, 0.06);
+  color: var(--ink-soft);
+  border: 2px dashed rgba(10, 42, 71, 0.22);
+  cursor: default;
+  box-shadow: none;
+}
+.btn-pending:hover { transform: none; box-shadow: none; }
+.btn-pending i { color: var(--brand); }
+
+/* --- "opens on <date>" panel that stands in for a form --- */
+.coming-soon {
+  background: var(--mint-light);
+  border: 3px solid rgba(125, 211, 192, 0.5);
+  border-left: 8px solid var(--brand);
+  border-radius: var(--radius);
+  padding: 2rem 2.25rem;
+  margin: 0 0 2.5rem;
+  box-shadow: var(--shadow-xs);
+}
+.coming-soon p.coming-soon-kicker {
+  margin: 0 0 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #2E8B57;
+}
+.coming-soon p.coming-soon-kicker i { margin-right: 0.4rem; }
+.coming-soon p.coming-soon-date {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 800;
+  color: var(--deep-navy);
+}
+.coming-soon p.coming-soon-body {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #1F5C3F;
+}
+@media (max-width: 700px) {
+  .coming-soon { padding: 1.5rem 1.35rem; }
+  .coming-soon p.coming-soon p.coming-soon-date { font-size: 1.25rem; }
+}
