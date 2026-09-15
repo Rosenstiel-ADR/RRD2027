@@ -49,8 +49,8 @@
   --brand-2:        #0E8A5F;
   --brand-grad:     linear-gradient(135deg, #006747 0%, #0E8A5F 100%);
 
-  --bg:             #FAF8F4;
-  --bg-warm:        #F2EDE4;
+  --bg:             #FDFCFA;
+  --bg-warm:        #F7F3ED;
   --surface-white:  #FFFFFF;
   --ink:            #2D3436;
   --ink-soft:       #5C6670;
@@ -221,8 +221,8 @@ img, svg { max-width: 100%; display: block; }
 .hero-inner {
   position: relative;
   z-index: 2;
-  padding-top: 7rem;
-  padding-bottom: 10rem;
+  padding-top: 4.5rem;
+  padding-bottom: 6rem;
   text-align: center;
   max-width: 1140px;
   margin-left: auto;
@@ -355,7 +355,7 @@ img, svg { max-width: 100%; display: block; }
   font-weight: 600;
   font-size: clamp(1.2rem, 2vw, 1.7rem);
   color: var(--deep-teal);
-  margin: 0 0 2.5rem;
+  margin: 0 0 1.5rem;
   max-width: none;
   line-height: 1.4;
   white-space: nowrap;
@@ -368,7 +368,7 @@ img, svg { max-width: 100%; display: block; }
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
-  margin: 0 0 2.5rem;
+  margin: 0 0 1.5rem;
   justify-content: center;
 }
 .hero-meta-item {
@@ -408,7 +408,7 @@ img, svg { max-width: 100%; display: block; }
   justify-content: center;
 }
 .cta-note {
-  margin: 2rem auto 0;
+  margin: 1.2rem auto 0;
   max-width: 58rem;
   font-size: 1.1rem;
   color: var(--ink-soft);
@@ -427,7 +427,7 @@ img, svg { max-width: 100%; display: block; }
 .countdown {
   display: flex;
   gap: 1.2rem;
-  margin: 3.5rem 0 0;
+  margin: 2rem 0 0;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -544,7 +544,7 @@ img, svg { max-width: 100%; display: block; }
   background: var(--surface-white);
   position: relative;
   z-index: 3;
-  margin-top: -4rem;
+  margin-top: -2.5rem;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-xl);
   padding: 2.5rem 2rem;
@@ -610,7 +610,7 @@ img, svg { max-width: 100%; display: block; }
     radial-gradient(500px 400px at 20% 100%, rgba(244, 115, 33, 0.05), transparent 60%),
     linear-gradient(180deg, var(--bg-warm) 0%, var(--bg) 100%);
   color: var(--ink);
-  padding: 5rem 0 7rem;
+  padding: 3rem 0 4.5rem;
   overflow: hidden;
 }
 .page-header h1 {
@@ -654,14 +654,14 @@ img, svg { max-width: 100%; display: block; }
 .page-header-waves svg { width: 100%; height: 100%; display: block; }
 .page-header-waves .wave-3 { fill: var(--bg); }
 
-.section { padding: 4rem 1.5rem; }
+.section { padding: 2.5rem 1.5rem; }
 .section h2 {
   font-family: var(--font-display);
   font-weight: 800;
   font-size: clamp(1.7rem, 3vw, 2.35rem);
   letter-spacing: -0.02em;
   color: var(--deep-navy);
-  margin: 0 0 2rem;
+  margin: 0 0 1.2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -777,7 +777,7 @@ a:hover { color: var(--deep-coral); border-bottom-color: var(--deep-coral); }
   font-size: 1.2rem;
   color: var(--ink-soft);
   max-width: 70ch;
-  margin: 0 0 3rem;
+  margin: 0 0 1.8rem;
   font-weight: 600;
 }
 .scope-grid {
@@ -975,7 +975,7 @@ a:hover { color: var(--deep-coral); border-bottom-color: var(--deep-coral); }
   background: var(--sun-light);
   padding: 1.5rem 2rem;
   border-radius: var(--radius);
-  margin: 0 0 2.5rem;
+  margin: 0 0 1.5rem;
   color: #6A4F11;
   display: flex;
   align-items: flex-start;
@@ -1086,7 +1086,7 @@ a:hover { color: var(--deep-coral); border-bottom-color: var(--deep-coral); }
 .awards-wall {
   background: var(--bg-warm);
   color: var(--ink);
-  padding: 4rem 3rem;
+  padding: 2.5rem 3rem;
   border-radius: var(--radius-lg);
   position: relative;
   overflow: hidden;
@@ -1099,7 +1099,7 @@ a:hover { color: var(--deep-coral); border-bottom-color: var(--deep-coral); }
   position: relative;
   z-index: 1;
   text-align: left;
-  margin: 0 0 3.5rem;
+  margin: 0 0 2rem;
 }
 .awards-wall p.awards-wall-kicker,
 .awards-wall-kicker {
@@ -1751,7 +1751,7 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
   flex-direction: column;
   gap: 0.6rem;
   max-width: 64ch;
-  margin: 0 0 2.5rem;
+  margin: 0 0 1.5rem;
 }
 .section-head h2 { margin: 0; }
 .section-head .lede {
@@ -1779,12 +1779,12 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
   .header-inner { gap: 0.8rem; flex-wrap: wrap; }
   .site-nav { width: 100%; gap: 0.3rem; justify-content: flex-start; flex-wrap: wrap; }
   .site-nav a { padding: 0.6rem 1rem; font-size: 1rem; }
-  .hero-inner { padding-top: 4rem; padding-bottom: 7rem; }
+  .hero-inner { padding-top: 3rem; padding-bottom: 4.5rem; }
   .cards { grid-template-columns: 1fr; }
   .awards { grid-template-columns: 1fr; }
   .awards-grid { grid-template-columns: 1fr; }
   .keydates li { grid-template-columns: 1fr; }
-  .section { padding: 3rem 1.5rem; }
+  .section { padding: 2rem 1.5rem; }
   .stat-strip { padding: 2rem 1.5rem; }
   .stat-num { font-size: 2.8rem; }
   .dropcap::first-letter { font-size: 3.6rem; padding: 0.4rem 0.7rem 0 0; }
@@ -1826,12 +1826,15 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
   color: var(--ink-soft);
   white-space: nowrap;
 }
+/* A section that is not live yet is not linked at all — no dimmed items,
+   no date pills. It simply is not in the navigation until its phase. */
 [data-phase="1"] .site-nav a.p2-link,
 [data-phase="1"] .site-nav a.p3-link,
-[data-phase="2"] .site-nav a.p3-link { opacity: 0.62; }
-[data-phase="1"] .site-nav a.p2-link:hover,
-[data-phase="1"] .site-nav a.p3-link:hover,
-[data-phase="2"] .site-nav a.p3-link:hover { opacity: 1; }
+[data-phase="2"] .site-nav a.p3-link { display: none !important; }
+
+/* In phase 1 the home page is the whole site, so the nav has nothing to
+   offer: hide it and let the brand mark in the header be the only link. */
+[data-phase="1"] .site-nav { display: none !important; }
 
 
 /* --- a call to action that isn't actionable yet --- */
@@ -1852,7 +1855,7 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
   border-left: 8px solid var(--brand);
   border-radius: var(--radius);
   padding: 2rem 2.25rem;
-  margin: 0 0 2.5rem;
+  margin: 0 0 1.5rem;
   box-shadow: var(--shadow-xs);
 }
 .coming-soon p.coming-soon-kicker {
