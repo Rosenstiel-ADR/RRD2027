@@ -1283,6 +1283,16 @@ a:hover { color: var(--deep-coral); border-bottom-color: var(--deep-coral); }
   font-weight: 500;
 }
 .form-fallback i { color: var(--coral); }
+.form-note {
+  font-size: 1.05rem;
+  color: var(--ink);
+  background: var(--bg-warm);
+  border-left: 3px solid var(--green);
+  border-radius: 0 6px 6px 0;
+  padding: 0.75rem 1rem;
+  margin: 1.25rem 0 0.5rem;
+}
+.form-note i { color: var(--green); margin-right: 0.4rem; }
 
 .sticky-cta {
   position: fixed;
