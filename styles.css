@@ -1993,3 +1993,117 @@ p, .lede, .tagline, .award-desc, .card p { text-wrap: pretty; }
 .hero h1.hero-title .ht-event,
 .hero h1.hero-title .ht-year { letter-spacing: -0.025em; }
 blockquote p { letter-spacing: -0.01em; }
+
+/* ============================================================
+   V17 ICONS
+   The home page now draws every icon from one stroked family,
+   inlined as an SVG sprite at the top of the body, instead of
+   mixing Font Awesome's solid glyphs with the hand-drawn strokes
+   in the cards and tiles. index.html therefore loads no icon CDN
+   at all, and its icons render in a local file:// preview.
+   The other four pages still use Font Awesome; the `i` rules
+   above are what style them, and the mirrors below do the same
+   job for the inline icons.
+   ============================================================ */
+
+.ico {
+  /* styles.css sets a bare `svg { display: block }` further up, which would
+     drop each icon onto its own line; these are inline glyphs. */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vertical-align: -0.14em;
+  flex-shrink: 0;
+}
+
+.topbar .ico { vertical-align: -0.16em; }
+.site-nav a.active .ico { color: #fff; }
+.hero-meta-item .ico { color: var(--brand-2); font-size: 1.15rem; }
+.cta-note .ico { color: var(--brand-2); margin-right: 0.5rem; }
+.btn .ico { font-size: 1.2em; }
+.btn-pending .ico { color: var(--brand); }
+.keydates .date .ico { color: var(--coral); font-size: 1.1rem; }
+.keydates li.is-deadline .date .ico { color: var(--deep-coral); }
+.keydates li.is-event .date .ico { color: var(--deep-gold); }
+.qr-card .qr-label .ico { color: var(--coral); font-size: 1em; }
+.dean-quote .quote-kicker .ico { color: var(--sun); }
+.countdown-label .ico { color: var(--brand-2); }
+
+/* The section-heading chips are a filled navy square: a stroked mark needs
+   to be a little larger and a little lighter there to read as well as a
+   solid glyph did. */
+.section h2 .section-icon .ico { width: 1.45rem; height: 1.45rem; stroke-width: 1.9; }
+
+/* The quote mark is decorative and sits large behind the kicker. */
+.dean-quote .quote-kicker .ico { width: 1.1em; height: 1.1em; }
+
+/* The other four pages, converted in the same pass: mirrors of the remaining
+   `i` rules above. Font Awesome is now gone from the whole site. */
+.callout .ico { color: #C48A00; font-size: 1.5rem; margin-top: 0.15rem; flex-shrink: 0; }
+.callout-highlight .ico { color: #2E8B57; }
+.schedule-time .ico { color: var(--coral); font-size: 1rem; }
+.venue-tag .ico { font-size: 0.8rem; color: var(--sky); }
+.award-icon .ico { color: inherit; width: 34px; height: 34px; stroke-width: 1.7; }
+.form-fallback .ico { color: var(--coral); }
+.form-note .ico { color: var(--green); margin-right: 0.4rem; }
+.coming-soon p.coming-soon-kicker .ico { margin-right: 0.4rem; }
+.page-header .ico, .page-hero .ico { flex-shrink: 0; }
+
+/* ============================================================
+   V17 ICON TILES — option B
+   The eight scope tiles, the four "what the day includes" cards
+   and the award cards each used to carry a different pastel tint.
+   The colors encoded nothing, so they invited a question the page
+   could not answer. One tone for all of them: a warm sand ground
+   with a navy mark — the first pass used a cool grey-blue, which
+   read as chilly against the page's off-white. The headings carry
+   the distinction, and the green section chips stay the page's
+   accent. Delete this block to get the pastels back.
+   ============================================================ */
+
+.scope-item .scope-icon,
+.card .card-icon,
+.card.card-oral .card-icon,
+.card.card-lightning .card-icon,
+.card.card-poster .card-icon,
+.card.card-social .card-icon,
+.scope-item[data-c] .scope-icon,
+.award-icon {
+  background: #F7F2EA;
+  color: var(--deep-navy);
+  box-shadow: none;
+  border-radius: 14px;
+}
+
+/* The card top-strips were four more colors doing the same non-job. */
+.card::before,
+.card.card-oral::before,
+.card.card-lightning::before,
+.card.card-poster::before,
+.card.card-social::before { background: var(--brand); }
+
+/* The four award cards are tinted by nth-child, which outranks the block
+   above, so they need naming too. */
+.awards-grid .award-card:nth-child(1) .award-icon,
+.awards-grid .award-card:nth-child(2) .award-icon,
+.awards-grid .award-card:nth-child(3) .award-icon,
+.awards-grid .award-card:nth-child(4) .award-icon {
+  background: #F7F2EA;
+  color: var(--deep-navy);
+}
+
+/* Tile borders were tinted to match each pastel; neutralize them too. */
+.scope-item { border-color: #EDE6DA; }
+
+/* With the tiles calmed down, the Dean's initials were the loudest thing on
+   the page — an orange-to-coral gradient on a decorative avatar. Same navy. */
+.dean-quote .quote-avatar {
+  background: #FBEBC4;
+  color: #9A6F0B;
+  box-shadow: none;
+}
