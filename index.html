@@ -31,6 +31,7 @@
     <symbol id="i-calendar-plus" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M12 14v4"/><path d="M10 16h4"/></symbol>
     <symbol id="i-chalkboard-user" viewBox="0 0 24 24"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></symbol>
     <symbol id="i-circle-dot" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
     <symbol id="i-door-open" viewBox="0 0 24 24"><path d="M13 4h3a2 2 0 0 1 2 2v14"/><path d="M2 20h3"/><path d="M13 20h9"/><path d="M10 12v.01"/><path d="M13 4.562v16.157a1 1 0 0 1-1.242.97L5.5 20.25a1 1 0 0 1-.5-.866V5.616a1 1 0 0 1 .78-.976l6-1.393a1 1 0 0 1 1.22.975"/></symbol>
     <symbol id="i-envelope" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
     <symbol id="i-file-alt" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
@@ -41,6 +42,9 @@
     <symbol id="i-hourglass-half" viewBox="0 0 24 24"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></symbol>
     <symbol id="i-info-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></symbol>
     <symbol id="i-list-check" viewBox="0 0 24 24"><path d="M16 5H3"/><path d="M16 12H3"/><path d="M11 19H3"/><path d="m15 18 2 2 4-4"/></symbol>
+    <symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-lightbulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+    <symbol id="i-microscope" viewBox="0 0 24 24"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></symbol>
     <symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
     <symbol id="i-map-marker-alt" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
     <symbol id="i-paper-plane" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></symbol>
@@ -109,6 +113,7 @@
           <span class="hero-meta-item"><svg class="ico" aria-hidden="true"><use href="#i-calendar-day"/></svg> <strong>Friday, April 2, 2027</strong></span>
           <span class="hero-meta-item"><svg class="ico" aria-hidden="true"><use href="#i-map-marker-alt"/></svg> Auditorium &amp; SALT</span>
           <span class="hero-meta-item"><svg class="ico" aria-hidden="true"><use href="#i-university"/></svg> Rosenstiel School, UM</span>
+          <span class="hero-meta-item hero-meta-countdown"><svg class="ico" aria-hidden="true"><use href="#i-hourglass-half"/></svg> <strong id="cd-days">--</strong>&thinsp;days away</span>
         </div>
 
         <p class="lede">
@@ -129,13 +134,6 @@
           sign-up so we can count you for lunch.
         </p>
 
-        <div class="countdown" id="countdown" aria-label="Time remaining until Research Day">
-          <span class="countdown-label"><svg class="ico" aria-hidden="true"><use href="#i-hourglass-half"/></svg> &nbsp;Countdown to Research Day</span>
-          <div class="countdown-cell"><span class="countdown-num" id="cd-days">00</span><span class="countdown-unit">Days</span></div>
-          <div class="countdown-cell"><span class="countdown-num" id="cd-hours">00</span><span class="countdown-unit">Hours</span></div>
-          <div class="countdown-cell"><span class="countdown-num" id="cd-mins">00</span><span class="countdown-unit">Minutes</span></div>
-          <div class="countdown-cell"><span class="countdown-num" id="cd-secs">00</span><span class="countdown-unit">Seconds</span></div>
-        </div>
       </div>
 
       <div class="hero-waves" aria-hidden="true">
@@ -182,6 +180,30 @@
         oral presentations, flash talks, and dedicated poster sessions spanning
         the school's science, from the deep ocean to the upper atmosphere.
       </p>
+    </section>
+
+    <!-- WHO -->
+    <section id="who" class="container section reveal">
+      <p class="section-kicker">Everyone is welcome!</p>
+      <h2><span class="section-icon"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></span> Who should participate?</h2>
+      <div class="cards who-cards">
+        <div class="card">
+          <div class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-graduation-cap"/></svg></div>
+          <h3>Students</h3>
+          <p>Share your work, exchange ideas, and connect with our research community.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-microscope"/></svg></div>
+          <h3>Postdocs &amp; Staff</h3>
+          <p>Showcase your contributions and spark conversations across disciplines.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-lightbulb"/></svg></div>
+          <h3>Faculty</h3>
+          <p>Share your expertise, support emerging researchers, and explore new connections.</p>
+        </div>
+      </div>
+      <p class="who-note">You don't need to present to participate. Come explore the research and connect with colleagues.</p>
     </section>
 
     <!-- SCOPE OF SCIENCE -->
@@ -243,12 +265,12 @@
         <div class="card card-lightning">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
           <h3>Flash Talks</h3>
-          <p>Quick poster teasers, an optional add-on for poster presenters, leading into the poster sessions.</p>
+          <p>Brief previews of poster research. Optional for poster presenters.</p>
         </div>
         <div class="card card-poster">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg></div>
           <h3>Poster Sessions</h3>
-          <p>Standalone viewing blocks in SALT, protected time, with refreshments.</p>
+          <p>Dedicated time to explore posters, meet presenters, and exchange ideas over refreshments.</p>
         </div>
         <div class="card card-award">
           <div class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-award"/></svg></div>
@@ -256,9 +278,9 @@
           <p>Peer-voted recognition awards celebrating outstanding research and presentation excellence.</p>
         </div>
         <div class="card card-social">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></div>
+          <div class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-message-circle"/></svg></div>
           <h3>Social Hour</h3>
-          <p>A closing social hour in SALT — a chance to connect, celebrate, and continue the conversations.</p>
+          <p>A closing social hour in SALT: a chance to connect, celebrate, and continue the conversations.</p>
         </div>
       </div>
     </section>
@@ -312,7 +334,7 @@
           <li class="timeline-node when-p2" data-kind="confirm">
             <div class="timeline-dot" aria-hidden="true"></div>
             <div class="timeline-label-block">
-              <p class="timeline-label">Jan 29, 2027</p>
+              <p class="timeline-label">Jan 15, 2027</p>
               <p class="timeline-sub">Audience sign-up closes · titles finalized</p>
             </div>
           </li>
@@ -340,7 +362,7 @@
         <li class="when-p2"><span class="date"><svg class="ico" aria-hidden="true"><use href="#i-bell"/></svg> Tue, Dec 15, 2026</span><span class="label">Reminder #1 to school</span></li>
         <li class="when-p2"><span class="date"><svg class="ico" aria-hidden="true"><use href="#i-bell"/></svg> Tue, Jan 12, 2027</span><span class="label">Reminder #2 to school</span></li>
         <li class="is-deadline"><span class="date"><svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg> Fri, Jan 15, 2027 · 5:00 pm ET</span><span class="label"><span class="until-p2">Abstract submission closes</span><span class="when-p2">Abstract submission and faculty sign-up close</span></span></li>
-        <li class="when-p2"><span class="date"><svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg> Fri, Jan 29, 2027</span><span class="label">Audience sign-up closes; titles finalized</span></li>
+        <li class="when-p2"><span class="date"><svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg> Fri, Jan 15, 2027</span><span class="label">Audience sign-up closes; titles finalized</span></li>
         <li><span class="date"><svg class="ico" aria-hidden="true"><use href="#i-bullhorn"/></svg> Mon, Feb 15, 2027</span><span class="label">Program announced</span></li>
         <li class="is-event"><span class="date"><svg class="ico" aria-hidden="true"><use href="#i-glass-cheers"/></svg> Fri, Apr 2, 2027</span><span class="label">Rosenstiel Research Day</span></li>
       </ul>
@@ -385,37 +407,14 @@
       </div>
     </section>
 
-    <!-- WHO -->
-    <section class="container section reveal">
-      <h2><span class="section-icon"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></span> Who should participate. <span class="everyone-kicker">🎉 Everyone Is Invited</span></h2>
-      <div class="cards">
-        <div class="card">
-          <div class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-graduation-cap"/></svg></div>
-          <h3>Students</h3>
-          <p>Graduate and undergraduate students are strongly encouraged to present as a talk, flash talk, or poster.<span class="when-p2"> Several awards recognize outstanding student work.</span></p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-user-tie"/></svg></div>
-          <h3>Postdocs &amp; Staff</h3>
-          <p>Share recent work, mentor student presenters, and connect with colleagues from across the school.<span class="when-p2"> Postdoc and staff contributions are eligible for awards.</span></p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-chalkboard-user"/></svg></div>
-          <h3>Faculty</h3>
-          <p><span class="until-p2">Present a poster and chair a session.</span><span class="when-p2">Present a poster, chair a session, and vote on the awards.</span> Your presence across talks, posters, and the closing social shapes the day.<span class="when-p2"> <a href="faculty.html">Sign up on the Faculty page</a>.</span></p>
-        </div>
-      </div>
-    </section>
 
 
     <!-- CONTACT + QR (side by side) -->
     <section class="container section reveal">
       <div class="contact-row">
         <div class="contact-text">
-          <p class="section-kicker" style="color:var(--deep-coral);">Scan to Join</p>
-          <p style="font-size:1.05rem; max-width:46ch;">
-            Scan with any phone camera to open the Rosenstiel Research Day site.
-          </p>
+          <p class="section-kicker" style="color:var(--deep-coral);">Take the details with you</p>
+          <p style="font-size:1.05rem;">Scan to keep the event details on your phone.</p>
 
           <p class="section-kicker" style="margin-top:2rem;">Questions?</p>
           <h2><span class="section-icon"><svg class="ico" aria-hidden="true"><use href="#i-envelope"/></svg></span> Get in touch.</h2>
@@ -431,7 +430,7 @@
             <img src="qr-main.svg" alt="QR code linking to the Rosenstiel Research Day 2027 site" />
           </div>
           <p class="qr-label"><svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg> Visit the Site</p>
-          <p class="qr-sub">All the details, program, submission, sign-up, key dates.</p>
+          <p class="qr-sub">Event information and key dates, with more details to come.</p>
         </a>
       </div>
     </section>
@@ -459,33 +458,28 @@
       }
     });
 
-    // Countdown to Friday, April 2, 2027 9:00 AM ET (UTC-4 on that date, DST)
+    // Countdown — Miami calendar dates; updates at page load and every minute
     (function () {
-      var target = new Date('2027-04-02T09:00:00-04:00').getTime();
-      var els = {
-        d: document.getElementById('cd-days'),
-        h: document.getElementById('cd-hours'),
-        m: document.getElementById('cd-mins'),
-        s: document.getElementById('cd-secs')
-      };
-      function pad(n) { return n < 10 ? '0' + n : '' + n; }
-      function tick() {
-        var diff = target - Date.now();
-        if (diff <= 0) {
-          els.d.textContent = '0'; els.h.textContent = '00'; els.m.textContent = '00'; els.s.textContent = '00';
-          return;
+      var cdItem = document.querySelector('.hero-meta-countdown');
+      var ico    = '<svg class="ico" aria-hidden="true"><use href="#i-hourglass-half"/></svg>';
+      function update() {
+        if (!cdItem) return;
+        // Today's date in Miami (America/New_York)
+        var today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+        if (today >= '2027-04-03') {
+          cdItem.style.display = 'none';
+        } else if (today === '2027-04-02') {
+          cdItem.innerHTML = ico + ' <strong>Today</strong>';
+        } else if (today === '2027-04-01') {
+          cdItem.innerHTML = ico + ' <strong>Tomorrow</strong>';
+        } else {
+          var p    = today.split('-');
+          var days = Math.round((new Date(2027, 3, 2) - new Date(+p[0], +p[1] - 1, +p[2])) / 86400000);
+          cdItem.innerHTML = ico + ' <strong>' + days + '</strong>\u2009days away';
         }
-        var days = Math.floor(diff / 86400000);
-        var hours = Math.floor((diff % 86400000) / 3600000);
-        var mins = Math.floor((diff % 3600000) / 60000);
-        var secs = Math.floor((diff % 60000) / 1000);
-        els.d.textContent = days;
-        els.h.textContent = pad(hours);
-        els.m.textContent = pad(mins);
-        els.s.textContent = pad(secs);
       }
-      tick();
-      setInterval(tick, 1000);
+      update();
+      setInterval(update, 60000); // re-check every minute; catches midnight without a page refresh
     })();
 
     // Scroll reveal (progressive enhancement)

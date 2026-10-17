@@ -145,7 +145,7 @@ img, svg { max-width: 100%; display: block; }
   color: #fff;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 0.03em;
   border-radius: 10px;
   position: relative;
@@ -371,7 +371,7 @@ img, svg { max-width: 100%; display: block; }
 .hero-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 0.35rem;
   margin: 0 0 1.5rem;
   justify-content: center;
 }
@@ -479,6 +479,31 @@ img, svg { max-width: 100%; display: block; }
   letter-spacing: 0.16em;
   color: var(--brand-2);
   margin-top: 0.6rem;
+}
+
+/* Inline days-only countdown: label + number side by side */
+.countdown--inline {
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1.4rem;
+  justify-content: center;
+}
+.countdown--inline .countdown-label {
+  width: auto;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.countdown--inline .countdown-cell {
+  padding: 0.7rem 1.2rem;
+  min-width: 0;
+}
+.countdown--inline .countdown-num {
+  font-size: 2rem;
+}
+.countdown--inline .countdown-unit {
+  font-size: 0.75rem;
+  margin-top: 0.3rem;
 }
 
 .hero-waves {
@@ -795,7 +820,7 @@ a:hover { color: var(--deep-coral); border-bottom-color: var(--deep-coral); }
 .scope-intro {
   font-size: 1.2rem;
   color: var(--ink-soft);
-  max-width: 70ch;
+  max-width: 90ch;
   margin: 0 0 1.8rem;
   font-weight: 600;
 }
@@ -1421,7 +1446,7 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
   background: var(--surface-white);
   border: 2px solid var(--line-warm);
   border-radius: var(--radius);
-  padding: 1.8rem 1.6rem 1.7rem;
+  padding: 0.9rem 1rem 0.9rem;
   box-shadow: var(--shadow-sm);
   text-align: center;
   position: relative;
@@ -1450,13 +1475,13 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
 .qr-card .qr-kicker {
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 800;
   color: var(--deep-coral);
   margin: 0;
 }
 .qr-card .qr-image {
-  width: 180px; height: 180px;
+  width: 120px; height: 120px;
   background: #fff;
   padding: 10px;
   border-radius: 12px;
@@ -1479,10 +1504,10 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
 }
 .qr-card .qr-label i { color: var(--coral); font-size: 1em; }
 .qr-card .qr-sub {
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   color: var(--muted);
   margin: 0;
-  line-height: 1.45;
+  line-height: 1.4;
   max-width: 28ch;
   font-weight: 500;
 }
@@ -1496,12 +1521,12 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
 .contact-row {
   display: flex;
   gap: 3rem;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .contact-row .contact-text { flex: 1 1 380px; min-width: 0; }
-.contact-row .contact-qr { flex: 0 0 auto; width: 320px; max-width: 100%; }
+.contact-row .contact-qr { flex: 0 0 auto; width: 300px; max-width: 100%; }
 @media (max-width: 720px) {
   .contact-row { gap: 2rem; }
   .contact-row .contact-qr { width: 100%; max-width: 340px; }
@@ -2130,4 +2155,29 @@ blockquote p { letter-spacing: -0.01em; }
   background: #FBEBC4;
   color: #9A6F0B;
   box-shadow: none;
+}
+
+/* Who note — non-presenter welcome line */
+.who-note {
+  text-align: center;
+  color: var(--muted);
+  font-size: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line-warm);
+  font-style: italic;
+}
+
+/* Reduce bottom padding in WHO section cards */
+.who-cards .card { padding-bottom: 1.1rem; }
+#who { padding-bottom: 0.4rem; }
+
+
+/* Countdown item inside hero-meta row */
+.hero-meta-countdown {
+  color: var(--brand-2);
+  font-weight: 700;
+}
+.hero-meta-countdown strong {
+  font-variant-numeric: tabular-nums;
 }
