@@ -2171,6 +2171,7 @@ blockquote p { letter-spacing: -0.01em; }
 /* Reduce bottom padding in WHO section cards */
 .who-cards .card { padding-bottom: 1.1rem; }
 #who { padding-bottom: 0.4rem; }
+.cards-5 .card { padding-bottom: 1.1rem; }
 
 
 /* Countdown item inside hero-meta row */
