@@ -670,7 +670,7 @@ img, svg { max-width: 100%; display: block; }
   margin: 0;
   font-size: 1.3rem;
   color: var(--ink-soft);
-  max-width: 65ch;
+  max-width: none;
   line-height: 1.7;
   font-weight: 600;
 }
@@ -1177,7 +1177,7 @@ a:hover { color: var(--deep-coral); border-bottom-color: var(--deep-coral); }
 .awards-wall-sub {
   color: var(--ink-soft);
   font-size: 1.2rem;
-  max-width: 60ch;
+  max-width: none;
   margin: 0;
   line-height: 1.6;
   font-weight: 500;
@@ -1869,6 +1869,11 @@ body.js-reveal .reveal.is-visible { opacity: 1; transform: translateY(0); }
 [data-phase="2"] .until-p2,
 [data-phase="3"] .until-p2,
 [data-phase="3"] .until-p3 { display: none !important; }
+
+/* When a callout immediately follows a hidden until-p2 element (phase 2/3),
+   pull it up to remove the orphaned section top-padding gap. */
+[data-phase="2"] .until-p2 + .callout,
+[data-phase="3"] .until-p2 + .callout { margin-top: -1.75rem; }
 
 /* --- nav: a section that isn't live yet is muted and dated --- */
 /* Date pills in the nav ("NOV 2", "FEB 1") are HIDDEN — Guoqing found them

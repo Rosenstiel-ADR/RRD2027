@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--
+  PHASED RELEASE SWITCH — change data-phase below on each release date.
+    1 = Save the Date (Oct 22, 2026)  · home page only; forms shown as "opens Nov 16"
+    2 = Abstracts open (Nov 16, 2026) · Submit / Faculty / Attend Only go live
+    3 = Program posted (Feb 15, 2027) · Program schedule goes live
+  Change it in ALL FIVE html files, or the nav will disagree with itself.
+-->
+<html lang="en" data-phase="2">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Submit Abstract · Rosenstiel Research Day 2027</title>
+  <meta name="description" content="Submit an abstract for Rosenstiel Research Day 2027: oral talk, lightning talk, or poster with optional flash talk." />
+  <meta name="theme-color" content="#0A2A47" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..800;1,8..60,400..700&family=Inter:wght@400..800&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Icon set: one stroked family, inlined. No icon CDN on this page. -->
+  <svg class="icon-sprite" aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute">
+    <symbol id="i-award" viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></symbol>
+    <symbol id="i-bullhorn" viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></symbol>
+    <symbol id="i-calendar-alt" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></symbol>
+    <symbol id="i-chalkboard-user" viewBox="0 0 24 24"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></symbol>
+    <symbol id="i-clipboard-question" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9.3 12a2.1 2.1 0 1 1 2.7 2c-.6.2-1 .8-1 1.5"/><path d="M12 18h.01"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+    <symbol id="i-desktop" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></symbol>
+    <symbol id="i-envelope" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-envelope-open-text" viewBox="0 0 24 24"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0z"/><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"/></symbol>
+    <symbol id="i-file-alt" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="i-hourglass-half" viewBox="0 0 24 24"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></symbol>
+    <symbol id="i-lightbulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+    <symbol id="i-list-check" viewBox="0 0 24 24"><path d="M16 5H3"/><path d="M16 12H3"/><path d="M11 19H3"/><path d="m15 18 2 2 4-4"/></symbol>
+    <symbol id="i-microphone" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></symbol>
+    <symbol id="i-paper-plane" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></symbol>
+    <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="m18 14 4 4-4 4"/><path d="m18 2 4 4-4 4"/><path d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22"/><path d="M2 6h1.972a4 4 0 0 1 3.6 2.2"/><path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-user-check" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></symbol>
+  </svg>
+
+
+  <div class="topbar until-p2">
+    <svg class="ico" aria-hidden="true"><use href="#i-bullhorn"/></svg> &nbsp;<strong>Save the Date – Friday, April 2, 2027.</strong>
+    &nbsp;Call for abstracts opens Mon, Nov 16, 2026.
+  </div>
+  <div class="topbar when-p2 until-p3">
+    <svg class="ico" aria-hidden="true"><use href="#i-bullhorn"/></svg> &nbsp;<strong>The call for abstracts is open.</strong>
+    &nbsp;Submit by Fri, Jan 15, 2027, 5:00 pm ET –
+    <a href="submit.html">submit an abstract</a>.
+  </div>
+  <div class="topbar when-p3">
+    <svg class="ico" aria-hidden="true"><use href="#i-bullhorn"/></svg> &nbsp;<strong>Rosenstiel Research Day – Friday, April 2, 2027.</strong>
+    &nbsp;The full program is now available –
+    <a href="program.html">see the schedule</a>.
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">RRD</span>
+        <span class="brand-text">
+          Rosenstiel Research Day <span class="year">2027</span>
+          <span class="school">Rosenstiel School · University of Miami</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html"><svg class="ico" aria-hidden="true"><use href="#i-home"/></svg> Home</a>
+        <a href="program.html" class="p3-link"><svg class="ico" aria-hidden="true"><use href="#i-calendar-alt"/></svg> Program <span class="nav-chip until-p3">Feb 15</span></a>
+        <a href="submit.html" class="active p2-link"><svg class="ico" aria-hidden="true"><use href="#i-file-alt"/></svg> Submit Abstract <span class="nav-chip until-p2">Nov 16</span></a>
+        <a href="faculty.html" class="p2-link"><svg class="ico" aria-hidden="true"><use href="#i-chalkboard-user"/></svg> Meet the Faculty <span class="nav-chip until-p2">Nov 16</span></a>
+        <a href="attend.html" class="p2-link"><svg class="ico" aria-hidden="true"><use href="#i-user-check"/></svg> Attend Only <span class="nav-chip until-p2">Nov 16</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <p class="eyebrow"><svg class="ico" aria-hidden="true"><use href="#i-bullhorn"/></svg> Call for Abstracts</p>
+        <h1>Submit an Abstract</h1>
+        <p class="lede">
+          Students, postdocs, staff, and faculty across the Rosenstiel School
+          are invited to present an oral talk, a lightning talk, or a poster (with an optional flash talk).
+          Faculty looking to participate without an abstract can use the <a href="faculty.html">Faculty sign-up</a> (Meet the Faculty session).
+        </p>
+      </div>
+      <div class="page-header-waves" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+          <path class="wave-3" d="M0,60 C240,80 480,30 720,50 C960,70 1200,30 1440,55 L1440,80 L0,80 Z" />
+        </svg>
+      </div>
+    </section>
+
+    <section class="container section">
+
+      <div class="coming-soon until-p2">
+        <p class="coming-soon-kicker"><svg class="ico" aria-hidden="true"><use href="#i-hourglass-half"/></svg> Not open yet</p>
+        <p class="coming-soon-date">Abstract submission opens Monday, November 16, 2026.</p>
+        <p class="coming-soon-body">The form will open here on that date, and submitting is all it takes to register &ndash; there is no separate registration step. In the meantime, the formats below are what you will be choosing between. The deadline will be Friday, January 15, 2027 at 5:00 pm ET.</p>
+      </div>
+      <div class="callout callout-highlight when-p2">
+        <svg class="ico" aria-hidden="true"><use href="#i-lightbulb"/></svg>
+        <div><strong>Submission is your registration.</strong> When you submit an
+        abstract you are automatically registered for Research Day,
+        there is no separate registration step. <strong>Faculty:</strong> you are welcome to submit an abstract here like any other presenter. The <a href="faculty.html">Faculty page</a> is for the separate Meet the Faculty session, which needs no abstract. Not presenting?
+        Use the <a href="attend.html">audience-only sign-up</a> instead.</div>
+      </div>
+
+      <div class="callout when-p2">
+        <svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>
+        <div><strong>Submission deadline:</strong> Friday, January 15, 2027 at 5:00 pm ET.</div>
+      </div>
+
+      <h2><span class="section-icon"><svg class="ico" aria-hidden="true"><use href="#i-desktop"/></svg></span> Presentation formats</h2>
+      <div class="cards">
+        <div class="card card-oral">
+          <div class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-microphone"/></svg></div>
+          <h3>Oral Talk</h3>
+          <p>Selective. Best for in-depth results. Open to students, postdocs, staff, and faculty.</p>
+        </div>
+        <div class="card card-lightning">
+          <div class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-hourglass-half"/></svg></div>
+          <h3>Lightning &amp; Flash Talk</h3>
+          <p>Short standalone lightning talks, plus optional flash talks for poster presenters.</p>
+        </div>
+        <div class="card card-poster">
+          <div class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-image"/></svg></div>
+          <h3>Poster</h3>
+          <p>A poster in a dedicated viewing block, with an optional flash talk (encouraged). Open to everyone.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section when-p2">
+      <h2><span class="section-icon"><svg class="ico" aria-hidden="true"><use href="#i-list-check"/></svg></span> Guidelines</h2>
+      <ul class="bulleted">
+        <li><strong>Length:</strong> 1,500 characters maximum, excluding title and author list.</li>
+        <li><strong>Format:</strong> Plain text. No figures or equations in the abstract body.</li>
+        <li><strong>Authors:</strong> List all authors with affiliations.</li>
+        <li><strong>Format preference:</strong> Indicate your preferred type (oral talk, lightning talk, or poster). Poster presenters may add an optional flash talk (encouraged). Assignments may be adjusted based on capacity and fit.</li>
+        <li><strong>Eligibility:</strong> Open across the Rosenstiel School and collaborating groups. Open to students, postdocs, staff, and faculty. The <a href="faculty.html">Faculty</a> page covers the separate Meet the Faculty session, which requires no abstract.</li>
+      </ul>
+    </section>
+
+    <section class="container section when-p2">
+      <h2><span class="section-icon"><svg class="ico" aria-hidden="true"><use href="#i-clipboard-question"/></svg></span> What the form will ask</h2>
+      <p>
+        Since submission also registers you for the day, the form collects
+        both your abstract and the logistics we'd otherwise ask at registration:
+      </p>
+      <ul class="bulleted">
+        <li><strong>You:</strong> name, email, role (student / postdoc / staff / faculty), department.</li>
+        <li><strong>Your abstract:</strong> title, author list, abstract body, subject area keywords.</li>
+        <li><strong>Format:</strong> preferred format (oral talk, lightning talk, or poster, with optional flash talk for poster presenters).</li>
+        <li><strong>Logistics:</strong> dietary restrictions, lunch headcount.</li>
+        <li><strong>Consent:</strong> photo / video consent for Rosenstiel communications.</li>
+      </ul>
+    </section>
+
+    <section class="container section when-p2">
+      <h2><span class="section-icon"><svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg></span> Submit online</h2>
+      <p>
+        Submit below - finalize titles and any poster needs by <strong>Jan. 15, 2027</strong>.
+      </p>
+
+      <p style="margin:1.75rem 0;">
+        <a class="btn btn-primary" href="https://forms.gle/nF71vWAevm3XtvXD6" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-paper-plane"/></svg> Open the Abstract Submission Form</a>
+      </p>
+    </section>
+
+    <section class="container section when-p2">
+      <h2><span class="section-icon"><svg class="ico" aria-hidden="true"><use href="#i-envelope-open-text"/></svg></span> Review and notification</h2>
+      <p>
+        Submissions will be grouped by theme and assigned to oral, lightning, or
+        poster (optional flash talk) format. All authors will learn their placement when the program
+        is announced on Monday, February 15, 2027.
+      </p>
+    </section>
+
+    <!-- AWARDS — announced when abstract submission opens (phase 2) -->
+    <section class="container section when-p2">
+      <p class="section-kicker">Research &amp; Presentation Excellence</p>
+      <h2><span class="section-icon"><svg class="ico" aria-hidden="true"><use href="#i-award"/></svg></span> Awards.</h2>
+
+      <div class="awards-wall">
+        <div class="awards-wall-header">
+          <p class="awards-wall-kicker">A Tradition of Excellence</p>
+          <h3 class="awards-wall-title">Four awards, by attendee vote.</h3>
+          <p class="awards-wall-sub">
+            Winners are chosen by attendee vote through the post-event survey and
+            announced about two weeks after the event: people's choice, rising tide, best communication, and the cross-currents award for bridging disciplines.
+          </p>
+        </div>
+        <div class="awards-grid">
+          <div class="award-card">
+            <div class="award-icon"><svg class="ico" aria-hidden="true"><use href="#i-star"/></svg></div>
+            <h4 class="award-name">People's Choice</h4>
+            <p class="award-desc">Voted by attendees for the presentation that most captured the audience's attention.</p>
+          </div>
+          <div class="award-card">
+            <div class="award-icon"><svg class="ico" aria-hidden="true"><use href="#i-award"/></svg></div>
+            <h4 class="award-name">Rising Tide</h4>
+            <p class="award-desc">For the student or early-career researcher whose work and presentation best exemplify the promise of Rosenstiel science.</p>
+          </div>
+          <div class="award-card">
+            <div class="award-icon"><svg class="ico" aria-hidden="true"><use href="#i-bullhorn"/></svg></div>
+            <h4 class="award-name">Best Communication</h4>
+            <p class="award-desc">For the presentation that most clearly and engagingly brought complex science to a broad audience, in any format.</p>
+          </div>
+          <div class="award-card">
+            <div class="award-icon"><svg class="ico" aria-hidden="true"><use href="#i-shuffle"/></svg></div>
+            <h4 class="award-name">Cross-Currents Award</h4>
+            <p class="award-desc">For the work that best bridges two departments or disciplines across the school.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="accent-bar"></div>
+    <div class="container footer-inner">
+      <p>&copy; 2027 Rosenstiel School of Marine, Atmospheric, and Earth Science · University of Miami</p>
+      <p><a href="index.html">Home</a><span class="when-p3"> · <a href="program.html">Program</a></span><span class="when-p2"> · <a href="submit.html">Submit</a> · <a href="faculty.html">Meet the Faculty</a> · <a href="attend.html">Attend Only</a></span></p>
+    </div>
+  </footer>
+</body>
+</html>
